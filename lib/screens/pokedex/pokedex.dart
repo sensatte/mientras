@@ -9,6 +9,7 @@ class Pokedex extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final title = 'Pokédex';
+    
 
     return Scaffold(
         resizeToAvoidBottomInset: false,
