@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+
 enum Type {
   NORMAL,
   GRASS,
@@ -74,17 +75,17 @@ class Pokemon {
   set setabilities(abilities) => this.abilities = abilities;
 
   Pokemon(
-      String _name,
-      int _number,
-      List<String> _types,
-      int _hp,
-      int _atk,
-      int _def,
-      int _spAtk,
-      int _spDef,
-      int _spd,
-      List<String> _abilities,
-      ) {
+    String _name,
+    int _number,
+    List<String> _types,
+    int _hp,
+    int _atk,
+    int _def,
+    int _spAtk,
+    int _spDef,
+    int _spd,
+    List<String> _abilities,
+  ) {
     name = _name;
     number = _number;
     types = _types;
@@ -117,7 +118,7 @@ class Pokemon {
       data['abilities'][0]['ability']['name'],
       data['abilities'][1]['ability']['name']
     ];
-    return new Pokemon(
-        _name, _number, _types, _hp, _atk, _def, _spAtk, _spDef, _spd, _abilities);
+    return new Pokemon(_name, _number, _types, _hp, _atk, _def, _spAtk, _spDef,
+        _spd, _abilities);
   }
 }

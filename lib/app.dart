@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:pikappi/screens/home/home.dart';
+
 import 'screens/home/home.dart';
 import 'screens/pokedex/pokedex.dart';
 
@@ -16,6 +17,7 @@ class App extends StatelessWidget {
       home: Home(),
     );
   }
+
   RouteFactory _routes() {
     return (settings) {
       final Map<String, dynamic> arguments = settings.arguments;
